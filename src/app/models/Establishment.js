@@ -8,6 +8,12 @@ class Establishment extends Model {
         phone: Sequelize.STRING,
         description: Sequelize.STRING,
         cnpj: Sequelize.STRING,
+        cep: Sequelize.STRING,
+        address: Sequelize.STRING,
+        neighborhood: Sequelize.STRING,
+        locality: Sequelize.STRING,
+        complement: Sequelize.STRING,
+        number: Sequelize.STRING,
       },
       {
         sequelize,
