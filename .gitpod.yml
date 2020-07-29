@@ -3,4 +3,6 @@ image:
 
 tasks:
   - init: yarn install
-    command: yarn run dev
+    command: docker run --name postgres-database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres && docker start postgres-database && yarn dev
+
+    
