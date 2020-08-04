@@ -1,8 +1,9 @@
-image:
-  file: .gitpod.Dockerfile
 
+ports:
+  - port: 3333
+    onOpen: open-browser
+
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: yarn install
-    command: docker run --name postgres-database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres && docker start postgres-database && yarn dev
-
-    
+  - init: yarn install # runs during prebuild
+    command: yarn dev

@@ -1,9 +1,6 @@
 module.exports = {
   dialect: 'postgres',
-  host: 'localhost',
-  username: 'postgres',
-  password: 'docker',
-  database: 'vouchers',
+  url: 'postgres://nkwmluzf:jq-vEfC0vaozIcYzop_kCT7LBxpTE3dN@motty.db.elephantsql.com:5432/nkwmluzf',
   define: {
     timestamps: true,
     underscored: true,
