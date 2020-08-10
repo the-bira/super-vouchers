@@ -1,6 +1,10 @@
 module.exports = {
   dialect: 'postgres',
-  url: 'postgres://nkwmluzf:jq-vEfC0vaozIcYzop_kCT7LBxpTE3dN@motty.db.elephantsql.com:5432/nkwmluzf',
+  host: 'motty.db.elephantsql.com',
+  username: 'nkwmluzf',
+  password: 'jq-vEfC0vaozIcYzop_kCT7LBxpTE3dN',
+  database: 'nkwmluzf',
+  port: 5432,
   define: {
     timestamps: true,
     underscored: true,
